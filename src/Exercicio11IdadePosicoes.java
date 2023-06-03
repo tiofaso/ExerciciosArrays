@@ -25,25 +25,21 @@ public class Exercicio11IdadePosicoes {
 
         Arrays.sort(vetorIdade);
 
-        int menorIdade = 0;
-        int maiorIdade = 0;
         int achouMenor = 0;
         int achouMaior = 0;
 
         //Procurando a posição da menor idade
         for(int l = 0; l < 10; l++) {
             if ((vetorIdade[0] == idadePessoas.get(l))) {
-                achouMenor = menorIdade + 1;
+                achouMenor = l + 1;
             }
-            menorIdade++;
         }
 
         //Procurando a posição da maior idade
         for(int m = 0; m < 10; m++){
             if(vetorIdade[9] == idadePessoas.get(m)){
-               achouMaior = maiorIdade;
+               achouMaior = m;
             }
-            maiorIdade++;
         }
 
         System.out.println("As idades digitadas foram as seguintes: " + idadePessoas);
